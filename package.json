@@ -37,6 +37,9 @@
     ]
   },
   "dependencies": {
-    "xterm": "^4.2.0-vscode1"
+    "@csstools/normalize.css": "^10.1.0",
+    "sanitize.css": "^11.0.0",
+    "xterm": "^4.2.0-vscode1",
+    "xterm-addon-fit": "^0.3.0"
   }
 }

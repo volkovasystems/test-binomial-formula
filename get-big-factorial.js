@@ -13,6 +13,16 @@ const getBigFactorial = (
 			||	1
 		);
 
+		let result = 1n;
+		while(
+			bigNumber > 0
+		){
+			result *= BigInt( bigNumber-- );
+		}
+
+		return	result;
+
+		/*
 		return	(
 					Object
 					.keys(
@@ -127,6 +137,7 @@ const getBigFactorial = (
 						1n
 					)
 				);
+		*/
 	}
 );
 

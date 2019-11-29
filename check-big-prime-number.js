@@ -12,9 +12,137 @@ const checkBigPrimeNumber = (
 			@end-note
 		*/
 
+		let limit = bigNumber;
+		while(
+				limit > 0
+
+			&&	(
+					(
+							getBigBinomialCoefficient( bigNumber, --limit )
+						%	BigInt( bigNumber )
+					)
+					=== 0n
+				)
+		){
+
+		}
+
 		return	(
 						bigNumber > 1
 
+					&&	limit === 0
+					/*
+					&&	Object
+						.keys(
+							Array(
+								Math.floor( Math.sqrt( bigNumber ) )
+							)
+							.join( )
+							.split( "," )
+						)
+						.map(
+							( value ) => (
+								parseInt( value ) + 1
+							)
+						)
+						.map(
+							( pageIndexValue ) => (
+								Object
+								.keys(
+									Array(
+										Math.floor(
+												bigNumber
+											/	Math.floor( Math.sqrt( bigNumber ) )
+										)
+									)
+									.join( )
+									.split( "," )
+								)
+								.map(
+									( value ) => (
+											( parseInt( value ) + 1 )
+										+	(
+													(
+														Math.floor(
+																bigNumber
+															/	Math.floor( Math.sqrt( bigNumber ) )
+														)
+													)
+												*	( pageIndexValue - 1 )
+											)
+									)
+								)
+							)
+						)
+						.concat(
+							[
+								Object
+								.keys(
+									Array(
+											bigNumber
+										-	(
+													Math.floor( Math.sqrt( bigNumber ) )
+												*	Math.floor(
+															bigNumber
+														/	Math.floor( Math.sqrt( bigNumber ) )
+													)
+											)
+									)
+									.join( )
+									.split( "," )
+								)
+								.slice(
+									Number(
+											(
+													bigNumber
+												-	(
+															Math.floor( Math.sqrt( bigNumber ) )
+														*	Math.floor(
+																	bigNumber
+																/	Math.floor( Math.sqrt( bigNumber ) )
+															)
+													)
+											)
+										===	0
+									)
+								)
+								.map(
+									( value ) => (
+											( parseInt( value ) + 1 )
+										+	(
+													( Math.floor( Math.sqrt( bigNumber ) ) )
+												*	(
+														Math.floor(
+																bigNumber
+															/	Math.floor( Math.sqrt( bigNumber ) )
+														)
+													)
+											)
+									)
+								)
+							]
+						)
+						.filter(
+							( list ) => (
+								list.length > 0
+							)
+						)
+						.every(
+							( list ) => (
+								list
+								.every(
+									( limit ) => (
+										(
+												getBigBinomialCoefficient( bigNumber, limit )
+											%	BigInt( bigNumber )
+										)
+										=== 0n
+									)
+								)
+							)
+						)
+					*/
+					/*
 					&&	Object
 						.keys(
 							Array( bigNumber )
@@ -31,6 +159,7 @@ const checkBigPrimeNumber = (
 								=== 0n
 							)
 						)
+					*/
 				);
 	}
 );

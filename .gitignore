@@ -1,3 +1,5 @@
 node_modules
 .cache
 dist
+prime-number-database
+prime-number-setting-database

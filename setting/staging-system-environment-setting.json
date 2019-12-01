@@ -1,0 +1,7 @@
+{
+	"SERVER_URI_PATH": "http://localhost:3000",
+
+	"MAIN_SITE_URI_PATH": "http://localhost:3000",
+	"DASHBOARD_SITE_URI_PATH": "http://localhost:3000",
+	"SERVICE_URI_PATH": "http://localhost:3000"
+}

@@ -65,8 +65,8 @@ terminal.writeln( `check big prime number 19: ${ checkBigPrimeNumber( 19 ) }` );
 terminal.writeln( `check big prime number 20: ${ checkBigPrimeNumber( 20 ) }` );
 
 terminal.writeln( `get big binomial coefficient of 7001,7000: ${ getBigBinomialCoefficient( 7001, 7000 ) }` );
-/*
-terminal.writeln( `check big prime number 7001: ${ checkBigPrimeNumber( 7001 ) }` );*/
+
+terminal.writeln( `check big prime number 7001: ${ checkBigPrimeNumber( 7001 ) }` );
 
 /*let index = 7000;
 let intervalInstance = (

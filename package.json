@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@csstools/normalize.css": "^10.1.0",
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "async-es": "^3.1.0",
     "called": "^0.32.0",
     "express": "^4.17.1",
